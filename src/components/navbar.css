@@ -12,14 +12,14 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(6, 82, 16);
-    padding: 1rem;
+    padding: 0.1rem;
 }
 
 .container ul{
     display: flex;
 }
 
-.container ul li a{
+.links{
     color: white;
     font-style: none;
     text-decoration: none;
@@ -27,15 +27,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.container ul li a:hover{
+.links:hover{
     background-color: rgb(10, 134, 27);
     border-radius: 0.5rem;
 }
 
-.container ul li a i{
-    font-style: none;
-    text-decoration: none;
-}
 
 
 

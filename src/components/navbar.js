@@ -1,14 +1,15 @@
 
 import "./navbar.css";
+import {Link} from "react-router-dom"
 
 
 export const NavBar = ()=>{
 
     return <div className="container">
         <ul>
-            <li><a href="a">Inicio</a></li>
-            <li><a href="a">Comprar</a></li>
-            <li><a href="a">Contactanos</a></li>    
+            <Link className="links" to="/">Inicio</Link>   
+            <Link className="links" to="/celulares">Celulares</Link>   
+            <Link className="links" to="/computadoras">Computadoras</Link>   
         </ul>
         <CartWidget/>
     </div>
@@ -18,9 +19,9 @@ export const NavBar = ()=>{
 export const CartWidget = ()=>{
 
     return <ul>
-            <li>
-                <a href="a"><i class="bi bi-cart4"></i> 0</a>
-            </li>
+        
+            <Link className="links bi bi-cart4" to="carrito">0</Link>
+            
         </ul>
     
 }
